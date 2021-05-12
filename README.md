@@ -40,7 +40,7 @@ The scripts and the static builder will be write in javascript to be accessible 
 We will use [DENO](https://deno.land/) as the javascript runtime instead of nodejs, because it has no package manager, it has an easier setup for non technical contributors.
 
 ## The REST API
-This folder will be the home of the rest api, where will work backend developers.
+This folder will be the home of the [REST API](https://www.redhat.com/en/topics/api/what-is-a-rest-api), where will work backend developers.
 It will be write using javascript, with [DENO](https://deno.land/), to keep the same choices as before.
 The [API](https://www.redhat.com/en/topics/api/what-is-a-rest-api) should be handle with all user interaction:
  - Authentication
@@ -48,4 +48,4 @@ The [API](https://www.redhat.com/en/topics/api/what-is-a-rest-api) should be han
  - Comments and personal information
 
 The [API](https://www.redhat.com/en/topics/api/what-is-a-rest-api) should be [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) enabled, to allow site communication with the [API](https://www.redhat.com/en/topics/api/what-is-a-rest-api) even if the site will be hosted in github pages.
-We will use sqlite database to store users information, for it simplicity in setup. The site has no need for scalability in database.
+We will use [SQLite database](https://www.sqlite.org/) to store users information, for it simplicity in setup. The site has no need for scalability in database.
