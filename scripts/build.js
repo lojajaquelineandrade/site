@@ -34,9 +34,9 @@ const views = {
   post: await read(`../templates/post.html`)
 }
 
-Deno.mkdirSync('../public/', {recursive: true})
+Deno.mkdirSync('../docs/', {recursive: true})
 Deno.writeTextFileSync(
-  '../public/index.html',
+  '../docs/index.html',
   mustache.render([
     '<!DOCTYPE html>',
     '<html>',
@@ -51,9 +51,9 @@ Deno.writeTextFileSync(
 )
 
 Posts.forEach(post => {
-  Deno.mkdirSync(`../public/${post.path}`, {recursive: true})
+  Deno.mkdirSync(`../docs/${post.path}`, {recursive: true})
   Deno.writeTextFileSync(
-    `../public/${post.path}/index.html`,
+    `../docs/${post.path}/index.html`,
     mustache.render([
       '<!DOCTYPE html>',
       '<html>',
